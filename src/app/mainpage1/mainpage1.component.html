@@ -115,7 +115,7 @@
     <br>
     <label>Venue: &nbsp; </label>
     <input type="text" formControlName='venue'>
-    <span style="color:rgb(241, 134, 134)" *ngIf="venue && venue.invalid && venue.touched"> This field is required</span>
+    <span style="color:rgb(255, 0, 0)" *ngIf="venue && venue.invalid && venue.touched"> This field is required</span>
 
     <br>
     <button [disabled]="loginForm.invalid" type="submit" class="quote">Get Your Quote</button>
