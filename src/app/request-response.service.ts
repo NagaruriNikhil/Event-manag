@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Mainpagedetails } from './mainpagedetails';
 
 @Injectable({
   providedIn: 'root'
@@ -24,8 +25,8 @@ export class RequestResponseService {
 
   }
  
-  public mainpagedetails(login1:any) {
-    return this.httpClient.post("http://localhost:8080/login", login1, { responseType: 'text' as 'json' });
+  public mainpagedetails(login1:Mainpagedetails) {
+    return this.httpClient.post("http://localhost:8080/mainPage", login1, { responseType: 'text' as 'json' });
   }
 
   public dologin() {
