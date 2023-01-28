@@ -18,7 +18,6 @@ export class RequestResponseService {
     const headers = new HttpHeaders().append('content-Type', 'text/plain');
     return this.httpClient.get("http://localhost:8080/getAllBanks");
   }
-
   getAllStateNames() {
     const headers = new HttpHeaders().append('content-Type', 'text/plain');
     return this.httpClient.get("http://localhost:8080/getAllStateNames");
@@ -27,6 +26,10 @@ export class RequestResponseService {
  
   public mainpagedetails(login1:Mainpagedetails) {
     return this.httpClient.post("http://localhost:8080/mainPage", login1, { responseType: 'text' as 'json' });
+  }
+
+  public sendmainpagedetails(login2:Mainpagedetails) {
+    return this.httpClient.post("http://localhost:8080/sendamail", login2,{ responseType: 'text' as 'json' });
   }
 
   public dologin() {

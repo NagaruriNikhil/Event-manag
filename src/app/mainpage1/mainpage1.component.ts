@@ -30,6 +30,8 @@ export class Mainpage1Component implements OnInit {
       console.log(mainpage);
     })
   }
+
+
   onSubmit(data: any) {
   this.dologin();
   }
