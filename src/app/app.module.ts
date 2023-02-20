@@ -8,6 +8,7 @@ import { SignupComponent } from './signup/signup.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { Mainpage1Component } from './mainpage1/mainpage1.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 
 
@@ -17,7 +18,8 @@ import { Mainpage1Component } from './mainpage1/mainpage1.component';
     LoginComponent,
     SignupComponent,
     MainpageComponent,
-    Mainpage1Component
+    Mainpage1Component,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
