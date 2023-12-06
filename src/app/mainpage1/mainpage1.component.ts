@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AbstractControl, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { AbstractControl, FormBuilder, FormControl, FormGroup, Validators, } from '@angular/forms';
 import { Mainpagedetails } from '../mainpagedetails';
 import { RequestResponseService } from '../request-response.service';
 
@@ -30,8 +30,10 @@ export class Mainpage1Component implements OnInit {
       console.log(mainpage);
     })
   }
+
+
   onSubmit(data: any) {
-  
+  this.dologin();
   }
 
   get username()
